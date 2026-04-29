@@ -197,17 +197,19 @@ H --> D
 ```
 
 ```mermaid
-usecaseDiagram
-  actor Cliente
-  actor Administrador
+flowchart TD
+    Cliente -->|usa| PesquisarProduto
+    Cliente -->|usa| ComprarProduto
+    Cliente -->|usa| RegistrarConta
 
-  Cliente --> (Pesquisar Produto)
-  Cliente --> (Comprar Produto)
-  Cliente --> (Registrar Conta)
+    Administrador -->|usa| GerenciarProdutos
+    Administrador -->|usa| GerenciarUsuarios
 
-  Administrador --> (Gerenciar Produtos)
-  Administrador --> (Gerenciar Usuários)
+    class Cliente,Administrador actor
+    class PesquisarProduto,ComprarProduto,RegistrarConta,GerenciarProdutos,GerenciarUsuarios usecase
 
+classDef actor fill:#f9f,stroke:#333,stroke-width:2px;
+classDef usecase fill:#bbf,stroke:#333,stroke-width:1px;
 ```
 
 
