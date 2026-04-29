@@ -183,5 +183,14 @@ Caso precise executar os testes para verificar a cobertura execute o comando `te
 
 Se os testes executarem com sucesso o resultado da cobertura ficara localizado em `/target/site/jacoco/index.html`
 
-<img width="278" height="199" alt="image" src="https://github.com/user-attachments/assets/8567a28d-fdf1-4764-ae83-3fdf0bfd710a" />
+flowchart TD
+A[Início] --> B{Está autenticado?}
+B -->|Sim| C[Mostrar página inicial]
+B -->|Não| D[Mostrar página de login]
+C --> E[Fim]
+D --> F[Usuário faz login]
+F --> G{Login bem-sucedido?}
+G -->|Sim| C
+G -->|Não| H[Mostrar mensagem de erro]
+H --> D
 
