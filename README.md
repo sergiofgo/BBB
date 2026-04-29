@@ -183,10 +183,5 @@ Caso precise executar os testes para verificar a cobertura execute o comando `te
 
 Se os testes executarem com sucesso o resultado da cobertura ficara localizado em `/target/site/jacoco/index.html`
 
-```plantuml
-@startuml Diagrama de Sequencia
-!theme spacelab
-Bob -> Sergio : hello
-Sergio-> Bob: tudo bom!
-@enduml
-```
+<img width="278" height="199" alt="image" src="https://github.com/user-attachments/assets/8567a28d-fdf1-4764-ae83-3fdf0bfd710a" />
+
