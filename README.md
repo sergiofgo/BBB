@@ -196,4 +196,18 @@ G -->|Não| H[Mostrar mensagem de erro]
 H --> D
 ```
 
+```mermaid
+usecaseDiagram
+  actor Cliente
+  actor Administrador
+
+  Cliente --> (Pesquisar Produto)
+  Cliente --> (Comprar Produto)
+  Cliente --> (Registrar Conta)
+
+  Administrador --> (Gerenciar Produtos)
+  Administrador --> (Gerenciar Usuários)
+
+```
+
 
