@@ -183,6 +183,7 @@ Caso precise executar os testes para verificar a cobertura execute o comando `te
 
 Se os testes executarem com sucesso o resultado da cobertura ficara localizado em `/target/site/jacoco/index.html`
 
+```mermaide
 flowchart TD
 A[Início] --> B{Está autenticado?}
 B -->|Sim| C[Mostrar página inicial]
@@ -193,4 +194,5 @@ F --> G{Login bem-sucedido?}
 G -->|Sim| C
 G -->|Não| H[Mostrar mensagem de erro]
 H --> D
+```
 
